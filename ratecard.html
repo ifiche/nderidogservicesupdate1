@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nderi Kennels ratecard - Transparent pricing for dog training, protection programs, boarding, grooming, and handler courses in Nairobi, Kenya.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Dog Training Services",
+  "offers": [
+    {"@type": "Offer", "name": "Basic Obedience", "price": "30000", "priceCurrency": "KES"},
+    {"@type": "Offer", "name": "Advanced Training", "price": "70000", "priceCurrency": "KES"},
+    {"@type": "Offer", "name": "Protection Training", "price": "100000", "priceCurrency": "KES"}
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTZJL5EKFZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FTZJL5EKFZ');
+</script>
+
+    <title>Ratecard • Nderi Kennels Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="canonical" href="https://nderidogservices.netlify.app/current-page.html">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .rate-card-container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            background: #111613;
+            border-radius: 48px;
+            box-shadow: 0 30px 60px -20px rgba(0,0,0,0.8);
+            overflow: hidden;
+        }
+
+        .hero-rate {
+            padding: 4rem 3rem;
+            background: linear-gradient(180deg, #0f140f 0%, #111613 100%);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .hero-rate h1 {
+            font-size: clamp(3rem, 10vw, 5rem);
+            font-weight: 800;
+            line-height: 0.9;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-text-stroke: 2px rgba(212, 175, 55, 0.6);
+        }
+
+        .hero-rate h1 span {
+            color: #d4af37;
+            -webkit-text-stroke: 0;
+        }
+
+        .content-rate {
+            padding: 3rem;
+        }
+
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tier-card {
+            background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 100%);
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .tier-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .tier-card.popular::before {
+            content: '★ MOST POPULAR';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #d4af37;
+            color: #0a0f0c;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.25rem 1rem;
+            border-radius: 100px;
+            letter-spacing: 1px;
+        }
+
+        .tier-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .tier-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 1rem;
+        }
+
+        .tier-price small {
+            font-size: 1rem;
+            color: #6b7280;
+        }
+
+        .tier-features {
+            list-style: none;
+            margin: 1.5rem 0;
+            color: #9ca3af;
+        }
+
+        .tier-features li {
+            margin: 0.5rem 0;
+        }
+
+        .tier-features i {
+            color: #d4af37;
+            margin-right: 0.5rem;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: 24px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #d4af37;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-price {
+            color: #d4af37;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .card-desc {
+            color: #9ca3af;
+            margin-top: 0.5rem;
+        }
+
+        .price-block {
+            background: rgba(0,0,0,0.2);
+            border-radius: 24px;
+            margin: 2rem 0;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            overflow: hidden;
+        }
+
+        .price-header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            padding: 1rem 1.5rem;
+            background: rgba(212, 175, 55, 0.05);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            font-weight: 600;
+        }
+
+        .price-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.02);
+            transition: background 0.3s ease;
+        }
+
+        .price-row:hover {
+            background: rgba(212, 175, 55, 0.03);
+        }
+
+        .price-row:last-child {
+            border-bottom: none;
+        }
+
+        .price-amount {
+            color: #d4af37;
+            font-weight: 600;
+        }
+
+        .notice-board {
+            background: linear-gradient(135deg, #1a1f1a 0%, #111613 100%);
+            border: 1px solid #d4af37;
+            border-radius: 32px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+
+        .notice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .notice-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #d1d5db;
+        }
+
+        .notice-item i {
+            color: #d4af37;
+        }
+
+        @media (max-width: 768px) {
+            .tier-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .price-header, .price-row {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .content-rate {
+                padding: 1.5rem;
+            }
+
+            .hero-rate {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">NDERI <span>KENNELS</span></a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="ratecard.html">Ratecard</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="rate-card-container">
+            <div class="hero-rate">
+                <h1>RATE <span>CARD</span></h1>
+                <p style="color: #9ca3af; margin-top: 1rem;">Transparent pricing for all our services</p>
+            </div>
+
+            <div class="content-rate">
+                <!-- Training Tiers -->
+                <h2 style="color: white; margin-bottom: 1rem;">Training Programs</h2>
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <div class="tier-name">Basic Obedience</div>
+                        <div class="tier-price">30K <small>KES</small></div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> 2 weeks intensive</li>
+                            <li><i class="fas fa-check"></i> Sit, stay, recall</li>
+                            <li><i class="fas fa-check"></i> Leash manners</li>
+                            <li><i class="fas fa-check"></i> Socialization</li>
+                        </ul>
+                    </div>
+                    <div class="tier-card popular">
+                        <div class="tier-name">Advanced</div>
+                        <div class="tier-price">70K <small>KES</small></div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> 6 weeks</li>
+                            <li><i class="fas fa-check"></i> Off-leash control</li>
+                            <li><i class="fas fa-check"></i> Distance commands</li>
+                            <li><i class="fas fa-check"></i> Complex scenarios</li>
+                        </ul>
+                    </div>
+                    <div class="tier-card">
+                        <div class="tier-name">Protection</div>
+                        <div class="tier-price">100K <small>KES</small></div>
+                        <ul class="tier-features">
+                            <li><i class="fas fa-check"></i> 10-14 weeks</li>
+                            <li><i class="fas fa-check"></i> Patrol training</li>
+                            <li><i class="fas fa-check"></i> Apprehension</li>
+                            <li><i class="fas fa-check"></i> Handler protection</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Specialized Services -->
+                <h2 style="color: white; margin: 3rem 0 1rem;">Specialized Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <div class="card-icon"><i class="fas fa-search"></i></div>
+                        <div class="card-title">
+                            Detection
+                            <span class="card-price">120K</span>
+                        </div>
+                        <div class="card-desc">Narcotics, explosives, currency detection - 12-16 weeks</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon"><i class="fas fa-home"></i></div>
+                        <div class="card-title">
+                            Home Guard
+                            <span class="card-price">75K</span>
+                        </div>
+                        <div class="card-desc">Property protection, intruder alert, family safety</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon"><i class="fas fa-tractor"></i></div>
+                        <div class="card-title">
+                            Farm/Ranch
+                            <span class="card-price">85K</span>
+                        </div>
+                        <div class="card-desc">Livestock protection, predator control</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon"><i class="fas fa-user-tie"></i></div>
+                        <div class="card-title">
+                            Handler Course
+                            <span class="card-price">30K</span>
+                        </div>
+                        <div class="card-desc">Professional handler certification</div>
+                    </div>
+                </div>
+
+                <!-- Grooming -->
+                <h2 style="color: white; margin: 3rem 0 1rem;">Grooming Services</h2>
+                <div class="price-block">
+                    <div class="price-header">
+                        <div>Grooming Service</div>
+                        <div>Size</div>
+                        <div>Duration</div>
+                        <div>Price</div>
+                    </div>
+                    <div class="price-row">
+                        <div><strong>Full Groom</strong><br><small>Bath, cut, nails, ears</small></div>
+                        <div>Small</div>
+                        <div>1.5-2h</div>
+                        <div class="price-amount">1,500 KES</div>
+                    </div>
+                    <div class="price-row">
+                        <div><strong>Full Groom</strong></div>
+                        <div>Medium</div>
+                        <div>2-2.5h</div>
+                        <div class="price-amount">2,500 KES</div>
+                    </div>
+                    <div class="price-row">
+                        <div><strong>Full Groom + Deshed</strong></div>
+                        <div>Large</div>
+                        <div>2.5-3.5h</div>
+                        <div class="price-amount">3,500 KES</div>
+                    </div>
+                    <div class="price-row">
+                        <div><strong>Bath & Dry Only</strong></div>
+                        <div>All Sizes</div>
+                        <div>1h</div>
+                        <div class="price-amount">800 - 1,500 KES</div>
+                    </div>
+                </div>
+
+                <!-- Boarding -->
+                <h2 style="color: white; margin: 3rem 0 1rem;">Boarding Rates</h2>
+                <div class="price-block">
+                    <div class="price-header">
+                        <div>Size</div>
+                        <div>Daily</div>
+                        <div>Weekly</div>
+                        <div>Monthly</div>
+                    </div>
+                    <div class="price-row">
+                        <div><strong>Small</strong> &lt;10kg</div>
+                        <div class="price-amount">1,200</div>
+                        <div>7,500 <span style="color:#10b981;">(save 1,900)</span></div>
+                        <div>28,000 <span style="color:#10b981;">(save 8,000)</span></div>
+                    </div>
+                    <div class="price-row">
+                        <div><strong>Medium</strong> 10-25kg</div>
+                        <div class="price-amount">1,800</div>
+                        <div>11,000 <span style="color:#10b981;">(save 1,600)</span></div>
+                        <div>40,000 <span style="color:#10b981;">(save 14,000)</span></div>
+                    </div>
+                    <div class="price-row">
+                        <div><strong>Large</strong> &gt;25kg</div>
+                        <div class="price-amount">2,500</div>
+                        <div>15,000 <span style="color:#10b981;">(save 2,500)</span></div>
+                        <div>55,000 <span style="color:#10b981;">(save 20,000)</span></div>
+                    </div>
+                </div>
+
+                <!-- Notice Board -->
+                <div class="notice-board">
+                    <div class="notice-grid">
+                        <div class="notice-item"><i class="fas fa-percent"></i> All prices +16% VAT</div>
+                        <div class="notice-item"><i class="fas fa-syringe"></i> Vaccinations required</div>
+                        <div class="notice-item"><i class="fas fa-file-signature"></i> 50% deposit over 4 weeks</div>
+                        <div class="notice-item"><i class="fas fa-calendar"></i> Valid until June 2026</div>
+                        <div class="notice-item"><i class="fas fa-clock"></i> 48hr cancellation policy</div>
+                        <div class="notice-item"><i class="fas fa-briefcase"></i> Corporate packages available</div>
+                        <div class="notice-item"><i class="fas fa-truck"></i> Transportation available</div>
+                        <div class="notice-item"><i class="fas fa-credit-card"></i> M-Pesa & card accepted</div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="contact.html" class="btn btn-primary">Request Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2>NDERI <span>KENNELS</span></h2>
+                <p style="color: #9ca3af; margin-bottom: 2rem;">Elite canine services in Nairobi since 2017. Protection, training, and care excellence.</p>
+                <div class="contact-block">
+                    <div class="contact-line">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+254705627844">+254 705 627 844</a>
+                    </div>
+                    <div class="contact-line">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:nderiprotectiondogs@gmail.com">nderiprotectiondogs@gmail.com</a>
+                    </div>
+                    <div class="contact-line">
+                        <i class="fas fa-map-pin"></i>
+                        <span>Nairobi, Kenya</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: white; margin-bottom: 1.5rem; font-size: 1.3rem;">Connect</h3>
+              <div class="social-grid">
+    <a href="https://www.instagram.com/donnderi" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@donnderi" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-tiktok"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+    <a href="https://wa.me/254705627844" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+</div>
+                <p style="color: #d4af37; margin-top: 1rem;">@donnderi</p>
+            </div>
+            <div class="hours-block">
+                <h3 style="color: white; margin-bottom: 1.5rem;">Hours</h3>
+                <div class="hours-row">
+                    <span>Mon-Fri</span>
+                    <span class="bold">8:00 - 18:00</span>
+                </div>
+                <div class="hours-row">
+                    <span>Saturday</span>
+                    <span class="bold">9:00 - 16:00</span>
+                </div>
+                <div class="hours-row">
+                    <span>Sunday</span>
+                    <span class="bold">Closed</span>
+                </div>
+                <div class="hours-row" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(212,175,55,0.2);">
+                    <span>Emergency</span>
+                    <span class="bold" style="color: #d4af37;">24/7</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2024 NDERI KENNELS — Excellence in Canine Services</div>
+            <div>
+                <i class="fas fa-paw" style="color: #d4af37;"></i>
+                <i class="fas fa-paw" style="color: #d4af37; margin: 0 0.5rem;"></i>
+                <i class="fas fa-paw" style="color: #d4af37;"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
